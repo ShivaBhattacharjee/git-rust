@@ -1,0 +1,19 @@
+# rust-git/Cargo.toml
+
+[package]
+name = "rust-git"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4"
+sha2 = "0.10"
+
+[workspace]
+members = [
+    "services/commit-service",
+    "services/log-service",
+    "services/branch-service",
+    "services/diff-service",
+    "cli"
+]
